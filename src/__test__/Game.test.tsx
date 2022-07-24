@@ -25,7 +25,7 @@ test("clicking on a tile changes the tile", () => {
 
 test("Showing a tie", () => {
   const { getByText, getByTestId, queryByText } = render(<Game />);
-  const clickOrder = [1, 5, 9, 6, 3, 2, 4, 7, 8,]
+  const clickOrder = [1, 5, 9, 6, 3, 2, 4, 7, 8];
 
   clickOrder.forEach((cell) => userEvent.click(getByTestId(`cell-${cell}`)));
 

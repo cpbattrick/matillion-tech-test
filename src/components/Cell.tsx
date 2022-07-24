@@ -4,7 +4,7 @@ import { SingleCell } from "../types";
 interface CellProps {
   onClick: (cell: number) => void;
   cell: number;
-  player: SingleCell
+  player: SingleCell;
 }
 const Cell: FunctionComponent<CellProps> = ({ onClick, cell, player }) => {
   return (
@@ -13,7 +13,7 @@ const Cell: FunctionComponent<CellProps> = ({ onClick, cell, player }) => {
       onClick={() => onClick(cell)}
       className="cell"
     >
-      <span className="cell-contents">{player ? player : '-'}</span>
+      <span className="cell-contents">{player ? player : "-"}</span>
     </div>
   );
 };

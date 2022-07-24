@@ -9,8 +9,8 @@ const winningScenarios = [
   [2, 5, 8],
   [0, 4, 8],
   [2, 4, 6],
-]
-  
+];
+
 const calculateWinner = (cells: Cells) => {
   let winner = null;
   winningScenarios.forEach((winningScenario) => {

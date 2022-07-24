@@ -14,7 +14,7 @@ const App: FunctionComponent = () => {
   const clickCell = (cell: number) => {
     if (cells[cell] !== null || winner) {
       return;
-    };
+    }
 
     const newCells = [...cells];
     newCells[cell] = player;
